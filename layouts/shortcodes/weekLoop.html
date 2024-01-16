@@ -1,0 +1,5 @@
+<!-- layouts/shortcodes/weekLoop.html -->
+{{ range $week := (seq 1 16) }}
+  {{/* Call the showWeek partial, passing the current context and week number */}}
+  {{ partial "showWeek.html" (dict "context" . "week" $week) }}
+{{ end }}

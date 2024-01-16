@@ -1,0 +1,53 @@
+          <style>
+            a#logo {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+              font-family: 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+              font-size: 1.875rem;
+              font-weight: 300;
+              margin-top: -.8125rem;
+              max-width: 60%;
+              text-transform: uppercase;
+              width: 14.125rem;
+              white-space: nowrap;
+            }
+            a#logo:hover {
+              color: #282828;
+              color: var(--MENU-SECTIONS-BG-color);
+            }
+            #logo svg {
+              margin-bottom: -1.25rem;
+              margin-inline-start: -1.47rem;
+              width: 40.5%;
+            }
+            @media only all and (max-width: 60rem) {
+              a#logo {
+                font-size: 2.5625rem;
+                margin-top: -.1875rem;
+              }
+              #logo svg {
+                margin-bottom: -.75rem;
+                margin-inline-start: -1.47rem;
+              }
+            }
+            @media all and (-ms-high-contrast:none) {
+              {{ "/* IE11s understanding of positioning is weird at best */" | safeCSS }}
+              a#logo {
+                margin-top: -3.625rem;
+              }
+              #logo svg {
+                margin-bottom: -3.875rem;
+                margin-left: -1.47rem;
+              }
+            }
+            @media only all and (-ms-high-contrast:none) and (max-width: 60rem) {
+              #logo svg {
+                margin-left: -3.47rem;
+              }
+            }
+          </style>
+          <a id="logo" href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" .Site.Home) }}">
+<svg viewBox="18.49 15.49 177.95 255.56" xmlns="http://www.w3.org/2000/svg"><path d="M196.44 84.92V15.49H18.49v69.43h39.83v116.69H18.49v69.44h177.95v-69.44h-39.58V84.92z" fill="#14274a"/><path d="M186.36 74.84V25.57H28.57v49.28h30.41c5.2 0 9.42 4.22 9.42 9.42v118.02c0 5.2-4.22 9.42-9.42 9.42H28.57v49.28h157.79v-49.28H156.2c-5.2 0-9.42-4.22-9.42-9.42V84.26c0-5.2 4.22-9.42 9.42-9.42z" fill="#ea4b36"/></svg>
+            CS 491 CAP
+          </a>
+

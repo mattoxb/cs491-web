@@ -1,0 +1,56 @@
+<!-- layouts/partials/showWeek.html -->
+{{ $startDate := time (index site.Data.params "week1start") }}
+
+
+<div class="box notices cstyle notice" style="--VARIABLE-BOX-color: green">
+  <div class="box-label">Week {{ $.week }}</div>
+  <div class="box-content">
+
+    <ul>
+    <!-- Lectures -->
+{{ range $key, $item := sort site.Data.lectures "date"}}
+  {{ $itemDate := time $item.date }}
+  {{ $weekDifference := div (sub ($itemDate.Unix) ($startDate.Unix)) (604800) }}
+  {{ $weekNumber := add 1 $weekDifference }}
+
+  {{ if eq $weekNumber $.week }}
+  {{ $formattedDate := $itemDate.Format "Monday, January 2" }}
+   <li> <b>Lecture: <a href="{{ site.BaseURL}}/lectures/{{$item.slug}}">{{ $item.title }}</a></b> {{ $formattedDate }} </li>
+   {{end }}
+{{ end }}
+
+    <!-- Homeworks -->
+{{ range $key, $item := site.Data.homeworks }}
+  <!-- HW Released -->
+  {{ $itemDate := time $item.start }}
+  {{ $weekDifference := div (sub ($itemDate.Unix) ($startDate.Unix)) (604800) }}
+  {{ $weekNumber := add 1 $weekDifference }}
+
+  {{ if eq $weekNumber $.week }}
+      {{ $formattedDate := $itemDate.Format "Monday, January 2" }}
+      {{ $formattedEnd := (time $item.end).Format "Monday, January 2" }}
+      {{ if $item.pl }}
+         <li> <b><a href="{{$item.pl}}">{{ $item.title }}</a></b> Released {{ $formattedDate }} (Due {{ $formattedEnd }})</li>
+         {{ else }}
+       <li> <b>{{ $item.title }}</b> Released {{ $formattedDate }} </li>
+       {{ end }}
+   {{end }}
+
+  <!-- HW Due -->
+  {{ $itemDate := time $item.end }}
+  {{ $weekDifference := div (sub ($itemDate.Unix) ($startDate.Unix)) (604800) }}
+  {{ $weekNumber := add 1 $weekDifference }}
+
+  {{ if eq $weekNumber $.week }}
+      {{ $formattedDate := $itemDate.Format "Monday, January 2" }}
+       {{ if $item.pl }}
+          <li> <b><a href="{{$item.pl}}">{{ $item.title }}</a> DUE</b> {{ $formattedDate }}</li>
+       {{ else }}
+          <li> <b>{{ $item.title }}</a> DUE</b> {{ $formattedDate }}</li>
+       {{ end }}
+   {{end }}
+       {{end}}
+
+</ul>
+</div>
+</div>

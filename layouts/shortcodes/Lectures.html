@@ -1,0 +1,17 @@
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Lesson</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+{{ range $lesson := (sort .Site.Data.lessons "date") }}
+<tr> <td> {{ if (index $lesson "date") }} {{ (index $lesson "date") | time.Format ":date_long" }} </td> {{end}}
+        <td> {{ index $lesson "number" }} </td>
+        <td> {{ index $lesson "name" }} </td>
+    </tr>
+{{ end }}
+</tbody>
+</table>
