@@ -1,7 +1,7 @@
 +++
 title = "Introduction to Competitive Programming"
 draft = false
-weight = 4
+weight = 1
 date = 2022-08-22
 publishdate = 2022-07-01
 +++
