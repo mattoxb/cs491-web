@@ -1,0 +1,210 @@
+introduction_to_competitive_programming:
+  title: Introduction to Competitve Programming
+  date: 2024-01-17
+  slug: introduction_to_competitive_programming
+  
+io:
+  title: IO
+  date: 2024-01-19
+  slug: io
+  
+standard_template_libaray:
+  title: Standard Template Library
+  date: 2024-01-22
+  slug: standard_template_libaray
+  
+complete_search:
+  title: Complete Search
+  date: 2024-01-24
+  slug: complete_search
+  
+divide_and_conquer:
+  title: Divide and Conquer
+  date: 2024-01-26
+  slug: divide_and_conquer
+  
+bsts_and_traversals:
+  title: BSTs and Traversals
+  date: 2024-01-29
+  slug: bsts_and_traversals
+  
+up_trees_disjoint_sets:
+  title: Up Trees and Disjoint Sets
+  date: 2024-01-31
+  slug: up_trees_disjoint_sets
+  
+lca_binary_lifting:
+  title: LCA and Binary Lifting
+  date: 2024-02-02
+  slug: lca_binary_lifting
+  
+graph_representations:
+  title: Graph Representations
+  date: 2024-02-05
+  slug: graph_representations
+  
+graph_traversals_1:
+  title: Graph Traversals 1
+  date: 2024-02-07
+  slug: graph_traversals_1
+  
+single_source_shortest_path:
+  title: Single Source Shortest Path
+  date: 2024-02-09
+  slug: single_source_shortest_path
+  
+all_points_shortest_path:
+  title: All Points Shortest Path
+  date: 2024-02-12
+  slug: all_points_shortest_path
+  
+graph_traversals_2:
+  title: Graph Traversals 2
+  date: 2024-02-14
+  slug: graph_traversals_2
+  
+minimum_spanning_trees:
+  title: Minimum Spanning Trees
+  date: 2024-02-16
+  slug: minimum_spanning_trees
+  
+greedy_algorithms:
+  title: Greedy Algorithms
+  date: 2024-02-19
+  slug: greedy_algorithms
+  
+dynamic_programming:
+  title: Dynamic Programming
+  date: 2024-02-21
+  slug: dynamic_programming
+  
+dp_lcs_and_lis:
+  title: "DP: LCS and LIS"
+  date: 2024-02-23
+  slug: dp_lcs_and_lis
+  
+dp_palindromes:
+  title: "DP: Palindromes"
+  date: 2024-02-26
+  slug: dp_palindromes
+  
+edit_distance:
+  title: "DP: Edit Distance"
+  date: 2024-02-28
+  slug: edit_distance
+  
+dp_knapsack:
+  title: "DP: Knapsack"
+  date: 2024-03-01
+  slug: dp_knapsack
+  
+dp_knapsack_2:
+  title: "DP: Knapsack 2"
+  date: 2024-03-04
+  slug: dp_knapsack_2
+  
+tsp:
+  title: "Travelling Sales Person"
+  date: 2024-03-06
+  slug: tsp
+
+early_spring_break_1:
+  title: Early Spring Break
+  date: 2024-03-08
+  slug: early_spring_break_1
+  
+spring_break_1:
+  title: Spring Break
+  date: 2024-03-11
+  slug: spring_break_1
+
+spring_break_1:
+  title: Spring Break
+  date: 2024-03-13
+  slug: spring_break_1
+
+spring_break_1:
+  title: Spring Break
+  date: 2024-03-15
+  slug: spring_break_1
+  
+kmp:
+  title: Knuth Morris Pratt
+  date: 2024-03-18
+  slug: kmp
+  
+rabin_karp:
+  title: Rabin Karp
+  date: 2024-03-20
+  slug: rabin_karp
+  
+bit_manipulations:
+  title: Bit Manipulations
+  date: 2024-03-22
+  slug: bit_manipulations
+  
+fast_exponentiation:
+  title: Fast Exponentiation
+  date: 2024-03-25
+  slug: fast_exponentiation
+  
+prime_numbers:
+  title: Prime Numbers
+  date: 2024-03-27
+  slug: prime_numbers
+  
+GCD:
+  title: GCD
+  date: 2024-03-29
+  slug: GCD
+  
+inclusion_exclusion:
+  title: Inclusion/Exclusion
+  date: 2024-04-01
+  slug: inclusion_exclusion
+  
+combinatorics:
+  title: Combinatorics
+  date: 2024-04-03
+  slug: combinatorics
+  
+catalan_numbers:
+  title: Catalan Numbers
+  date: 2024-04-05
+  slug: catalan_numbers
+  
+sqrt-decomposition:
+  title: Sqrt Decomposition
+  date: 2024-04-08
+  slug: sqrt-decomposition
+  
+segment-trees:
+  title: Segment Trees
+  date: 2024-04-10
+  slug: segment-trees
+  
+lazy-segment-trees:
+  title: Lazy Segment Trees
+  date: 2024-04-12
+  slug: lazy-segment-trees
+  
+points_lines_vectors:
+  title: Points, Lines, and Vectors
+  date: 2024-04-15
+  slug: points_lines_vectors
+  
+shapes:
+  title: Shapes
+  date: 2024-04-17
+  slug: shapes
+  
+convex_hull:
+  title: Convex Hull
+  date: 2024-04-19
+  slug: convex_hull
+  
+line_sweep:
+  title: Line Sweep
+  date: 2024-04-22
+  slug: line_sweep
+  
