@@ -12,4 +12,4 @@ of them.
 
 ## Materials {#materials}
 
--   [Slides](/slides/IO.pdf)
+-   [Slides](/slides/io.pdf)
