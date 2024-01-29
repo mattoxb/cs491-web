@@ -23,25 +23,25 @@ divide_and_conquer:
   date: 2024-01-26
   slug: divide_and_conquer
   
+graph_representations:
+  title: Graph Representations
+  date: 2024-01-29
+  slug: graph_representations
+  
 bsts_and_traversals:
   title: BSTs and Traversals
-  date: 2024-01-29
+  date: 2024-01-31
   slug: bsts_and_traversals
   
 up_trees_disjoint_sets:
   title: Up Trees and Disjoint Sets
-  date: 2024-01-31
+  date: 2024-02-02
   slug: up_trees_disjoint_sets
   
 lca_binary_lifting:
   title: LCA and Binary Lifting
-  date: 2024-02-02
-  slug: lca_binary_lifting
-  
-graph_representations:
-  title: Graph Representations
   date: 2024-02-05
-  slug: graph_representations
+  slug: lca_binary_lifting
   
 graph_traversals_1:
   title: Graph Traversals 1

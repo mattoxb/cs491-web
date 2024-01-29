@@ -8,6 +8,8 @@ draft: false
 
 ### Welcome to CS 491 CAP!
 
+- **The canonical address for this class is https://cs491-web-sp24.pages.dev**
+  - The github pages version is a backup.
 - The web pages are being ported, so some of the content is not complete yet, but feel free to look around.
 - The [Docs]({{<relref "docs">}}) menu contains course documentation.
 - Check out the [Syllabus]({{<relref "syllabus">}}) to get started!
