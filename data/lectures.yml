@@ -28,10 +28,10 @@ graph_representations:
   date: 2024-01-29
   slug: graph_representations
   
-bsts_and_traversals:
-  title: BSTs and Traversals
+bsts:
+  title: BSTs
   date: 2024-01-31
-  slug: bsts_and_traversals
+  slug: bsts
   
 up_trees_disjoint_sets:
   title: Up Trees and Disjoint Sets
