@@ -33,20 +33,20 @@ bsts:
   date: 2024-01-31
   slug: bsts
   
+graph_traversals_1:
+  title: Graph Traversals 1
+  date: 2024-02-02
+  slug: graph_traversals_1
+  
 up_trees_disjoint_sets:
   title: Up Trees and Disjoint Sets
-  date: 2024-02-02
+  date: 2024-02-05
   slug: up_trees_disjoint_sets
   
 lca_binary_lifting:
   title: LCA and Binary Lifting
-  date: 2024-02-05
-  slug: lca_binary_lifting
-  
-graph_traversals_1:
-  title: Graph Traversals 1
   date: 2024-02-07
-  slug: graph_traversals_1
+  slug: lca_binary_lifting
   
 single_source_shortest_path:
   title: Single Source Shortest Path
