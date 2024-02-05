@@ -38,10 +38,10 @@ graph_traversals_1:
   date: 2024-02-02
   slug: graph_traversals_1
   
-up_trees_disjoint_sets:
-  title: Up Trees and Disjoint Sets
+disjoint_sets:
+  title: Disjoint Sets
   date: 2024-02-05
-  slug: up_trees_disjoint_sets
+  slug: disjoint_sets
   
 lca_binary_lifting:
   title: LCA and Binary Lifting
