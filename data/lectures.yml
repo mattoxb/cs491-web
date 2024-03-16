@@ -168,43 +168,62 @@ combinatorics:
   date: 2024-04-03
   slug: combinatorics
   
+eoh:
+  title: No Class (EOH)
+  date: 2024-04-05
+  slug: eoh
+
+solar-eclipte:
+  title: No Class (Solar Eclipse)
+  date: 2024-04-08
+  slug: solar-eclipse
+  
 catalan_numbers:
   title: Catalan Numbers
-  date: 2024-04-05
+  date: 2024-04-10
   slug: catalan_numbers
   
 sqrt-decomposition:
   title: Sqrt Decomposition
-  date: 2024-04-08
+  date: 2024-04-12
   slug: sqrt-decomposition
   
 segment-trees:
   title: Segment Trees
-  date: 2024-04-10
+  date: 2024-04-15
   slug: segment-trees
   
 lazy-segment-trees:
   title: Lazy Segment Trees
-  date: 2024-04-12
+  date: 2024-04-17
   slug: lazy-segment-trees
   
 points_lines_vectors:
   title: Points, Lines, and Vectors
-  date: 2024-04-15
+  date: 2024-04-19
   slug: points_lines_vectors
   
 shapes:
   title: Shapes
-  date: 2024-04-17
+  date: 2024-04-22
   slug: shapes
   
 convex_hull:
   title: Convex Hull
-  date: 2024-04-19
+  date: 2024-04-24
   slug: convex_hull
   
 line_sweep:
   title: Line Sweep
-  date: 2024-04-22
+  date: 2024-04-26
   slug: line_sweep
   
+tba1:
+  title: TBA 1
+  date: 2024-04-29
+  slug: tba1
+
+tba2:
+  title: TBA 2
+  date: 2024-05-01
+  slug: tba2
