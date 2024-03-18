@@ -7,6 +7,6 @@ weight = 2
 
 ## Materials {#materials}
 
--   [Slides](/slides/kmp.pdf)
+-   [Slides](/slides/knuth-morris-pratt.pdf)
 -   [Naive Matching Video]({{< relref "naive_matching_video" >}})
 -   [KMP Matching Video]({{< relref "kmp_matching_video" >}})
