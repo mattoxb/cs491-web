@@ -156,7 +156,7 @@ prime_numbers:
 GCD:
   title: GCD
   date: 2024-03-29
-  slug: GCD
+  slug: gcd
   
 inclusion_exclusion:
   title: Inclusion/Exclusion

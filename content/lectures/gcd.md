@@ -14,3 +14,4 @@ competitve programming problems.
 ## Materials {#materials}
 
 -   [GCD Handout](/handouts/gcd.pdf)
+-   [GCD Handout Solutions (Partial)](/handouts/gcd-solutions.pdf)
