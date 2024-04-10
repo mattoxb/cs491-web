@@ -178,15 +178,15 @@ solar-eclipte:
   date: 2024-04-08
   slug: solar-eclipse
   
-catalan_numbers:
-  title: Catalan Numbers
-  date: 2024-04-10
-  slug: catalan_numbers
-  
 sqrt-decomposition:
   title: Sqrt Decomposition
-  date: 2024-04-12
+  date: 2024-04-10
   slug: sqrt-decomposition
+  
+catalan_numbers:
+  title: Catalan Numbers
+  date: 2024-04-12
+  slug: catalan_numbers
   
 segment-trees:
   title: Segment Trees
