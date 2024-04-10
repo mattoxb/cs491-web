@@ -5,7 +5,7 @@ draft = false
 weight = 2
 +++
 
-```c++ { linenos=true, linenostart=1 }
+```c++ 
 function dist(p1,p2,p) {
 
   var A = p.x - p1.x;
