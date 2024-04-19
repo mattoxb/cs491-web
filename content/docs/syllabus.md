@@ -37,6 +37,7 @@ have learned to implement your solutions quickly and accurately, being given min
 incorrect.  You will have learned to work on your own and in an ICPC style team of students using one computer.  And
 hopefully you will have a lot of fun doing so!
 
+Four credit students will also learn to write problems and test cases.
 
 ## Class Structure {#class-structure}
 
@@ -63,10 +64,16 @@ We will calculate the percentage of the problems you solve from the pre-class pr
 problem sets.  Each problem has the same weight.  To pass the class you must solve 70% of the available problems.
 Because we add new problems all the time we cannot tell you ahead of time how many problems will be in the class.
 
+### Writing Problems
+
+For the fourth credit hour, students will complete training on the Polygon sytem and learn to write competitive
+programming problems.  You will be asked to create a new problem roughly every four weeks, and you will be asked to
+verify and give feedback on the problems of other four-credit hour students.
+
 ### Improper Optimization
 
 Every semester, somebody fails this course because they tried to do precisely the amount of work necessary and not
-one bit more to get the points they need to pass this class... and are off by one.
+one bit more to get the points they need to pass this class... and are off by one.  Don't be that student.
 
 ## Other Things {#other-things}
 
