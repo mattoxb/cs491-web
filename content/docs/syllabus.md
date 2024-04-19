@@ -52,11 +52,21 @@ picking the correct algorithm to use.
 
 **This course is a Credit/No Credit course.**
 
-There are two components to your grade: attendance and solving problems.
+There are two components to your grade: attendance and solving problems.  Four credit hour students will also create problems.
 
 ### Attendance {#attendance}
 
-Attendance is required, and will be taken.  You must have attended (or have been excused from) 70% of the available lectures to pass this class.
+Attendance is required, and will be taken.  Part of the process of
+learning competitive programming is helping each other understand
+the problems and the algorithms that solve them.  Some of the
+lecture topics involve how to compete as a team, and you will practice
+this during some of the clss periods.
+
+You must have attended (or have been excused from) 70% of the available lectures to pass this class.  If there are no
+group programming exercises (and you have poor time management skills) you may leave the class after the mini-lecture.
+
+If you are more than 5 minutes late we reserve the right to not count
+your attendance for that day.
 
 ### Solving Problems {#solving-problems}
 
