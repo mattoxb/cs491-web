@@ -198,15 +198,15 @@ lazy-segment-trees:
   date: 2024-04-17
   slug: lazy-segment-trees
   
+fenwick-trees:
+  title: Fenwick Trees
+  date: 2024-04-19
+  slug: fenwick-trees
+
 points_lines_vectors:
   title: Points, Lines, and Vectors
-  date: 2024-04-19
-  slug: points_lines_vectors
-  
-shapes:
-  title: Shapes
   date: 2024-04-22
-  slug: shapes
+  slug: points_lines_vectors
   
 convex_hull:
   title: Convex Hull
@@ -224,6 +224,6 @@ tba1:
   slug: tba1
 
 tba2:
-  title: TBA 2
+  title: Interviewing Skills
   date: 2024-05-01
-  slug: tba2
+  slug: interviewing-skills
