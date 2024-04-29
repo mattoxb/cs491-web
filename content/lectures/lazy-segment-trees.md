@@ -11,4 +11,5 @@ This allows not only queries, but updates to be done in \\({\cal O}(\log\_2 n)\\
 
 ## Slides {#slides}
 
+-   [Slides (from Andrea)](/slides/Lazy-Segment-Trees.pdf)
 -   [Slides](/slides/lazy-segment-trees.pdf)
