@@ -215,14 +215,9 @@ convex_hull:
   
 line_sweep:
   title: Line Sweep
-  date: 2024-04-26
+  date: 2024-04-29
   slug: line_sweep
   
-tba1:
-  title: TBA 1
-  date: 2024-04-29
-  slug: tba1
-
 tba2:
   title: Interviewing Skills
   date: 2024-05-01
