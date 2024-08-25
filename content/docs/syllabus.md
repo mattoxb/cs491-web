@@ -68,11 +68,18 @@ group programming exercises (and you have poor time management skills) you may l
 If you are more than 5 minutes late we reserve the right to not count
 your attendance for that day.
 
+You may be excused from class if you let me know beforehand that you will be absent.  You can do that via this form:
+https://docs.google.com/forms/d/e/1FAIpQLSfZfDSo3cAqZ3MU2y-jn0OgoiUKcTQjeZGvyrxwuJVR10d1WQ/viewform?usp=sf_link
+
+
 ### Solving Problems {#solving-problems}
 
-We will calculate the percentage of the problems you solve from the pre-class problems, the homeworks, and the bi-weekly
-problem sets.  Each problem has the same weight.  To pass the class you must solve 70% of the available problems.
-Because we add new problems all the time we cannot tell you ahead of time how many problems will be in the class.
+We will calculate the percentage of the problems you solve from the problem sets we post on code-forces.  The problems
+vary in difficulty from very easy to world-finals level, but each problem has the same weight.  To pass the class you
+must solve 70% of the available problems.  Because we add new problems all the time we cannot tell you ahead of time how
+many problems will be in the class.
+
+We do not give extensions for the problems.
 
 ### Improper Optimization
 
