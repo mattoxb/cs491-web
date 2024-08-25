@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'CS 491 CAP - Sp24'
+title = 'CS 491 CAP - Fa24'
 
 RelativeURLs=true
 CanonifyURLs=true

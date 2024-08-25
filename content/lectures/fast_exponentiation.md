@@ -2,7 +2,7 @@
 title = "Fast Exponentiation"
 date = 2023-03-24
 draft = false
-weight = 2
+weight = 27
 +++
 
 Exponents are fun, but using bit techniques we covered last time we can compute them significantly faster than the standard technique.

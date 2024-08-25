@@ -1,224 +1,229 @@
 introduction_to_competitive_programming:
   title: Introduction to Competitve Programming
-  date: 2024-01-17
+  date: 2024-08-26
   slug: introduction_to_competitive_programming
   
 io:
   title: IO
-  date: 2024-01-19
+  date: 2024-08-28
   slug: io
   
 standard_template_libaray:
   title: Standard Template Library
-  date: 2024-01-22
+  date: 2024-08-30
   slug: standard_template_libaray
+  
+labor_day:
+  title: Labor Day
+  date: 2024-09-02
+  slug: labor_day
   
 complete_search:
   title: Complete Search
-  date: 2024-01-24
+  date: 2024-09-04
   slug: complete_search
   
 divide_and_conquer:
   title: Divide and Conquer
-  date: 2024-01-26
+  date: 2024-09-06
   slug: divide_and_conquer
-  
-graph_representations:
-  title: Graph Representations
-  date: 2024-01-29
-  slug: graph_representations
   
 bsts:
   title: BSTs
-  date: 2024-01-31
+  date: 2024-09-09
   slug: bsts
-  
-graph_traversals_1:
-  title: Graph Traversals 1
-  date: 2024-02-02
-  slug: graph_traversals_1
   
 disjoint_sets:
   title: Disjoint Sets
-  date: 2024-02-05
+  date: 2024-09-11
   slug: disjoint_sets
+  
+graph_representations:
+  title: Graph Representations
+  date: 2024-09-13
+  slug: graph_representations
+  
+graph_traversals_1:
+  title: Graph Traversals 1
+  date: 2024-09-16
+  slug: graph_traversals_1
   
 lca_binary_lifting:
   title: LCA and Binary Lifting
-  date: 2024-02-07
+  date: 2024-09-18
   slug: lca_binary_lifting
   
 single_source_shortest_path:
   title: Single Source Shortest Path
-  date: 2024-02-09
+  date: 2024-09-20
   slug: single_source_shortest_path
   
 all_points_shortest_path:
   title: All Points Shortest Path
-  date: 2024-02-12
+  date: 2024-09-23
   slug: all_points_shortest_path
   
 graph_traversals_2:
   title: Graph Traversals 2
-  date: 2024-02-14
+  date: 2024-09-25
   slug: graph_traversals_2
   
 minimum_spanning_trees:
   title: Minimum Spanning Trees
-  date: 2024-02-16
+  date: 2024-09-27
   slug: minimum_spanning_trees
   
 greedy_algorithms:
   title: Greedy Algorithms
-  date: 2024-02-19
+  date: 2024-09-30
   slug: greedy_algorithms
   
 dynamic_programming:
   title: Dynamic Programming
-  date: 2024-02-21
+  date: 2024-10-02
   slug: dynamic_programming
   
 dp_lcs_and_lis:
   title: "DP: LCS and LIS"
-  date: 2024-02-23
+  date: 2024-10-04
   slug: dp_lcs_and_lis
   
 dp_palindromes:
   title: "DP: Palindromes"
-  date: 2024-02-26
+  date: 2024-10-07
   slug: dp_palindromes
   
 edit_distance:
   title: "DP: Edit Distance"
-  date: 2024-02-28
+  date: 2024-10-09
   slug: edit_distance
   
 dp_knapsack:
   title: "DP: Knapsack"
-  date: 2024-03-01
+  date: 2024-10-11
   slug: dp_knapsack
   
 dp_knapsack_2:
   title: "DP: Knapsack 2"
-  date: 2024-03-04
+  date: 2024-10-14
   slug: dp_knapsack_2
   
 tsp:
   title: "Travelling Sales Person"
-  date: 2024-03-06
+  date: 2024-10-16
   slug: tsp
 
-early_spring_break_1:
-  title: Early Spring Break
-  date: 2024-03-08
-  slug: early_spring_break_1
-  
-spring_break_1:
-  title: Spring Break
-  date: 2024-03-11
-  slug: spring_break_1
-
-spring_break_1:
-  title: Spring Break
-  date: 2024-03-13
-  slug: spring_break_1
-
-spring_break_1:
-  title: Spring Break
-  date: 2024-03-15
-  slug: spring_break_1
-  
 kmp:
   title: Knuth Morris Pratt
-  date: 2024-03-18
+  date: 2024-10-21
   slug: kmp
   
 rabin_karp:
   title: Rabin Karp
-  date: 2024-03-20
+  date: 2024-10-23
   slug: rabin_karp
   
 bit_manipulations:
   title: Bit Manipulations
-  date: 2024-03-22
+  date: 2024-10-25
   slug: bit_manipulations
   
 fast_exponentiation:
   title: Fast Exponentiation
-  date: 2024-03-25
+  date: 2024-10-28
   slug: fast_exponentiation
   
 prime_numbers:
   title: Prime Numbers
-  date: 2024-03-27
+  date: 2024-10-30
   slug: prime_numbers
   
-GCD:
+gcd:
   title: GCD
-  date: 2024-03-29
+  date: 2024-11-01
   slug: gcd
   
 inclusion_exclusion:
   title: Inclusion/Exclusion
-  date: 2024-04-01
+  date: 2024-11-04
   slug: inclusion_exclusion
   
 combinatorics:
   title: Combinatorics
-  date: 2024-04-03
+  date: 2024-11-06
   slug: combinatorics
-  
-eoh:
-  title: No Class (EOH)
-  date: 2024-04-05
-  slug: eoh
-
-solar-eclipte:
-  title: No Class (Solar Eclipse)
-  date: 2024-04-08
-  slug: solar-eclipse
   
 sqrt-decomposition:
   title: Sqrt Decomposition
-  date: 2024-04-10
+  date: 2024-11-08
   slug: sqrt-decomposition
   
 catalan_numbers:
   title: Catalan Numbers
-  date: 2024-04-12
+  date: 2024-11-11
   slug: catalan_numbers
   
 segment-trees:
   title: Segment Trees
-  date: 2024-04-15
+  date: 2024-11-13
   slug: segment-trees
   
 lazy-segment-trees:
   title: Lazy Segment Trees
-  date: 2024-04-17
+  date: 2024-11-15
   slug: lazy-segment-trees
-  
+
 fenwick-trees:
   title: Fenwick Trees
-  date: 2024-04-19
+  date: 2024-11-18
   slug: fenwick-trees
 
 points_lines_vectors:
   title: Points, Lines, and Vectors
-  date: 2024-04-22
+  date: 2024-11-20
   slug: points_lines_vectors
+
+shapes:
+  title: Shapes
+  date: 2024-11-22
+  slug: shapes
   
+fall_break_1:
+  title: Fall Break
+  date: 2024-11-25
+  slug: fall_break_1
+
+fall_break_2:
+  title: Fall Break
+  date: 2024-11-27
+  slug: fall_break_2
+
+fall_break_3:
+  title: Fall Break
+  date: 2024-11-29
+  slug: fall_break_3
+
 convex_hull:
   title: Convex Hull
-  date: 2024-04-24
+  date: 2024-12-02
   slug: convex_hull
   
 line_sweep:
   title: Line Sweep
-  date: 2024-04-29
+  date: 2024-12-04
   slug: line_sweep
   
-tba2:
+interviewing_skills:
   title: Interviewing Skills
-  date: 2024-05-01
-  slug: interviewing-skills
+  date: 2024-12-06
+  slug: interviewing_skills
+
+convex_hull_dp:
+  title: Convex Hull
+  date: 2024-12-09
+  slug: convex_hull
+  
+rotating_calipers:
+  title: Convex Hull
+  date: 2024-12-11
+  slug: convex_hull

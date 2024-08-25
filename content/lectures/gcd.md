@@ -2,7 +2,7 @@
 title = "GCD"
 date = 2023-03-08
 draft = false
-weight = 2
+weight = 29
 +++
 
 GCD, or Greatest Common Divisor, is a mathematical concept that refers to the largest positive integer that divides two or more numbers without leaving a remainder.

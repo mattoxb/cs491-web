@@ -2,7 +2,7 @@
 title = "All Points Shortest Path"
 date = 2023-02-20
 draft = false
-weight = 2
+weight = 13
 +++
 
 The Floyd-Warshall algorithm is a dynamic programming technique used in competitive programming to find the shortest

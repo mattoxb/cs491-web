@@ -1,7 +1,7 @@
 +++
 title = "Complete Search"
 draft = false
-weight = 4
+weight = 5
 date = 2022-08-22
 publishdate = 2022-07-01
 +++

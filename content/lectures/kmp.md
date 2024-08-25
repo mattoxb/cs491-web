@@ -2,7 +2,7 @@
 title = "KMP String Matching"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 24
 +++
 
 ## Materials {#materials}

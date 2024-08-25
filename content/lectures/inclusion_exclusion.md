@@ -2,7 +2,7 @@
 title = "Inclusion/Exclusion"
 date = 2023-03-08
 draft = false
-weight = 2
+weight = 30
 +++
 
 The principle of inclusion/exclusion is a counting technique used to calculate the size of a union of sets. It states that:

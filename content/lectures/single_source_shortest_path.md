@@ -2,7 +2,7 @@
 title = "Single Source Shortest Path"
 date = 2023-02-20
 draft = false
-weight = 2
+weight = 12
 +++
 
 Normally we would talk about traversals, but at this point you probably are okay with BFS and DFS.  So to speed things up,

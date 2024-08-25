@@ -2,7 +2,7 @@
 title = "Prime Numbers"
 date = 2023-03-01
 draft = false
-weight = 2
+weight = 28
 +++
 
 Prime numbers are a familiar feature in mathematics, and often come up in competitive programming.  In this lecture

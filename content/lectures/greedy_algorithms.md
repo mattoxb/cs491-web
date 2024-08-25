@@ -1,9 +1,8 @@
 +++
 title = "Greedy Algorithms"
 draft = false
-weight = 6
+weight = 16
 date = 2022-08-22
-publishdate = 2022-07-01
 +++
 
 A Greedy Algorithm is a problem-solving approach that makes a locally optimal choice at each step.  There is a class of

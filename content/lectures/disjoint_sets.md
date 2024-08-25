@@ -2,7 +2,7 @@
 title = "Disjoint Sets"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 8
 +++
 
 It is sometimes necessary to determine quickly whether two elements belong to the same set or

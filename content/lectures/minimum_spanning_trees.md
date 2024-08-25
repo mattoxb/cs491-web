@@ -2,7 +2,7 @@
 title = "Minimum Spanning Trees"
 date = 2023-02-20
 draft = false
-weight = 2
+weight = 15
 +++
 
 Sometimes you want to connect a graph and minimize the cost of the connections without regard to the length of a path

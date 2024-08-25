@@ -1,7 +1,7 @@
 +++
 title = "Divide and Conquer"
 draft = false
-weight = 5
+weight = 6
 date = 2022-08-22
 publishdate = 2022-07-01
 +++

@@ -2,7 +2,7 @@
 title = "Trees, Binary and Otherwise"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 7
 +++
 
 One special type of graph is called a *tree*.  The three trees you will see most often are

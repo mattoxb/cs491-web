@@ -2,7 +2,7 @@
 title = "DP: Palindromes"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 19
 +++
 
 A palindrome is a string that is the same after being reversed. We can

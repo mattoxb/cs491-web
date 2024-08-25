@@ -1,9 +1,8 @@
 +++
 title = "Introduction to Dynamic Programming"
 draft = false
-weight = 7
+weight = 17
 date = 2022-08-22
-publishdate = 2022-07-01
 +++
 
 Greedy algorithms are fun, but sometimes you need more power than what they can give you.  Like Greedy problems, Dynamic Programming (DP)

@@ -2,7 +2,7 @@
 title = "DP: LCS and LIS"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 18
 +++
 
 Two related problems are _Longest Common Subsequence_ and _Longest Increasing Subsequence_. We can solve both of these

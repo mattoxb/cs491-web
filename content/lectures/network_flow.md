@@ -2,7 +2,7 @@
 title = "Network Flow"
 date = 2023-02-27
 draft = false
-weight = 2
+weight = 0
 +++
 
 The Edmonds-Karp algorithm is a popular and efficient algorithm used to solve the max-flow problem in network flow

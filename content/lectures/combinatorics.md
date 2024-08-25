@@ -2,7 +2,7 @@
 title = "Combinatorics"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 31
 +++
 
 Combinatorics is the branch of mathematics that deals with counting and arranging objects.  We will cover some of the

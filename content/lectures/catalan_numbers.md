@@ -2,7 +2,7 @@
 title = "Catalan Numbers"
 date = 2023-03-06
 draft = false
-weight = 2
+weight = 33
 +++
 
 The catalan numbers are a sequence that describe a large number of recursive problems. For example, they can count the

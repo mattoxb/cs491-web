@@ -2,7 +2,7 @@
 title = "Graph Traversals 1"
 date = 2023-02-24
 draft = false
-weight = 2
+weight = 10
 +++
 
 We will cover the baseic traversals of DFS and BFS and talk about what we can do with them

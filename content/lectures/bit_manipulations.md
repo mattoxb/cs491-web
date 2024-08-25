@@ -2,7 +2,7 @@
 title = "Bit Manipulations"
 date = 2023-03-20
 draft = false
-weight = 2
+weight = 26
 +++
 
 There are a lot of things you can do using bit-level operations that will speed things up for you.

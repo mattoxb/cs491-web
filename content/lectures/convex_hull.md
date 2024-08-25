@@ -2,7 +2,7 @@
 title = "Convex Hull"
 date = 2023-04-05
 draft = false
-weight = 2
+weight = 42
 +++
 
 ## Materials {#materials}

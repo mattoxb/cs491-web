@@ -10,10 +10,10 @@ publishdate = 2022-07-01
 
 -   Course Title: Introduction to Competitive Programming
 -   Rubric: CS 491 CAP
--   CRN: 31584
--   Dates: January 17, 2024 -- May 1, 2024
--   Time: 14:00 -- 14:50
--   Location: 2310 Everett Lab
+-   CRN: {{<param "CRN">}}
+-   Dates: {{<param "meeting.dates" >}}
+-   Time: {{<param "meeting.time" >}} {{<param "meeting.days">}}
+-   Location: {{<param "meeting.location" >}}
 -   Instructor: Mattox Beckman
 -   Recommended Textbooks:
     -   [Competitive Programming 4](https://cpbook.org)
