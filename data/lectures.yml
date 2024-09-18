@@ -219,11 +219,11 @@ interviewing_skills:
   slug: interviewing_skills
 
 convex_hull_dp:
-  title: Convex Hull
+  title: Convex Hull DP
   date: 2024-12-09
-  slug: convex_hull
+  slug: convex_hull_dp
   
 rotating_calipers:
-  title: Convex Hull
+  title: Rotating Calipers
   date: 2024-12-11
-  slug: convex_hull
+  slug: rotating_calipers
