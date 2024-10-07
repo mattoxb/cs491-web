@@ -1,0 +1,184 @@
+all_points_shortest_path:
+  date: '2024-09-23'
+  slug: all_points_shortest_path
+  title: All Points Shortest Path
+bit_manipulations:
+  date: '2024-10-02'
+  slug: bit_manipulations
+  title: Bit Manipulations and Fast Exponentiation
+bsts:
+  date: '2024-09-09'
+  slug: bsts
+  title: BSTs
+catalan_numbers:
+  date: '2024-11-15'
+  slug: catalan_numbers
+  title: Catalan Numbers
+combinatorics:
+  date: '2024-11-13'
+  slug: combinatorics
+  title: Combinatorics
+complete_search:
+  date: '2024-09-04'
+  slug: complete_search
+  title: Complete Search
+convex_hull:
+  date: '2024-11-29'
+  slug: convex_hull
+  title: Convex Hull
+convex_hull_dp:
+  date: '2024-12-06'
+  slug: convex_hull_dp
+  title: Convex Hull DP
+disjoint_sets:
+  date: '2024-09-11'
+  slug: disjoint_sets
+  title: Disjoint Sets
+divide_and_conquer:
+  date: '2024-09-06'
+  slug: divide_and_conquer
+  title: Divide and Conquer
+dp_knapsack:
+  date: '2024-10-25'
+  slug: dp_knapsack
+  title: 'DP: Knapsack'
+dp_knapsack_2:
+  date: '2024-10-28'
+  slug: dp_knapsack_2
+  title: 'DP: Knapsack 2'
+dp_lcs_and_lis:
+  date: '2024-10-18'
+  slug: dp_lcs_and_lis
+  title: 'DP: LCS and LIS'
+dp_palindromes:
+  date: '2024-10-21'
+  slug: dp_palindromes
+  title: 'DP: Palindromes'
+dynamic_programming:
+  date: '2024-10-16'
+  slug: dynamic_programming
+  title: Dynamic Programming
+edit_distance:
+  date: '2024-10-23'
+  slug: edit_distance
+  title: 'DP: Edit Distance'
+fall_break_1:
+  date: '2024-11-22'
+  slug: fall_break_1
+  title: Fall Break
+fall_break_2:
+  date: '2024-11-25'
+  slug: fall_break_2
+  title: Fall Break
+fall_break_3:
+  date: '2024-11-27'
+  slug: fall_break_3
+  title: Fall Break
+fenwick-trees:
+  date: '2024-10-04'
+  slug: fenwick-trees
+  title: Fenwick Trees
+gcd:
+  date: '2024-11-08'
+  slug: gcd
+  title: GCD
+graph_representations:
+  date: '2024-09-13'
+  slug: graph_representations
+  title: Graph Representations
+graph_traversals_1:
+  date: '2024-09-16'
+  slug: graph_traversals_1
+  title: Graph Traversals 1
+graph_traversals_2:
+  date: '2024-09-25'
+  slug: graph_traversals_2
+  title: Graph Traversals 2
+greedy_algorithms:
+  date: '2024-09-30'
+  slug: greedy_algorithms
+  title: Greedy Algorithms
+inclusion_exclusion:
+  date: '2024-11-11'
+  slug: inclusion_exclusion
+  title: Inclusion/Exclusion
+interviewing_skills:
+  date: '2024-12-04'
+  slug: interviewing_skills
+  title: Interviewing Skills
+introduction_to_competitive_programming:
+  date: '2024-08-26'
+  slug: introduction_to_competitive_programming
+  title: Introduction to Competitve Programming
+io:
+  date: '2024-08-28'
+  slug: io
+  title: IO
+kmp:
+  date: '2024-11-01'
+  slug: kmp
+  title: Knuth Morris Pratt
+labor_day:
+  date: '2024-09-02'
+  slug: labor_day
+  title: Labor Day
+lazy-segment-trees:
+  date: '2024-10-11'
+  slug: lazy-segment-trees
+  title: Lazy Segment Trees
+lca_binary_lifting:
+  date: '2024-09-18'
+  slug: lca_binary_lifting
+  title: LCA and Binary Lifting
+lca_binary_lifting_review:
+  date: '2024-10-14'
+  slug: lca_binary_lifting_review
+  title: LCA and Binary Lifting, Review
+line_sweep:
+  date: '2024-12-02'
+  slug: line_sweep
+  title: Line Sweep
+minimum_spanning_trees:
+  date: '2024-09-27'
+  slug: minimum_spanning_trees
+  title: Minimum Spanning Trees
+points_lines_vectors:
+  date: '2024-11-18'
+  slug: points_lines_vectors
+  title: Points, Lines, and Vectors
+prime_numbers:
+  date: '2024-11-06'
+  slug: prime_numbers
+  title: Prime Numbers
+rabin_karp:
+  date: '2024-11-04'
+  slug: rabin_karp
+  title: Rabin Karp
+rotating_calipers:
+  date: '2024-12-09'
+  slug: rotating_calipers
+  title: Rotating Calipers
+segment-trees:
+  date: '2024-10-09'
+  slug: segment-trees
+  title: Segment Trees
+shapes:
+  date: '2024-11-20'
+  slug: shapes
+  title: Shapes
+single_source_shortest_path:
+  date: '2024-09-20'
+  slug: single_source_shortest_path
+  title: Single Source Shortest Path
+sqrt-decomposition:
+  date: '2024-10-07'
+  slug: sqrt-decomposition
+  title: Sqrt Decomposition
+standard_template_libaray:
+  date: '2024-08-30'
+  slug: standard_template_libaray
+  title: Standard Template Library
+tsp:
+  date: '2024-10-30'
+  slug: tsp
+  title: Travelling Sales Person
