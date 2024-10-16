@@ -74,9 +74,9 @@ fall_break_3:
   date: '2024-11-27'
   slug: fall_break_3
   title: Fall Break
-fenwick-trees:
+fenwick_trees:
   date: '2024-10-04'
-  slug: fenwick-trees
+  slug: fenwick_trees
   title: Fenwick Trees
 gcd:
   date: '2024-11-08'
