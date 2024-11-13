@@ -19,4 +19,5 @@ position.  We will examine how to calculate the number of derangements for a set
 
 ## Slides {#slides}
 
--   [Combinatorics](/slides/combinatorics.pdf)
+-   [Slides](/reveal/combinatorics.html)
+-   [PDF Slides](/slides/combinatorics.pdf)
