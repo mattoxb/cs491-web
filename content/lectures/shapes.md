@@ -10,4 +10,4 @@ Here are some shapes that you may find in competitive program and the formulae y
 
 ## Slides {#slides}
 
--   [Slides](/slides/shapes.pdf)
+-   [Slides](/reveal/shapes.html)
