@@ -88,274 +88,179 @@
     </script>
 </head>
 
-<title>Polygons and Convex Hull</title>
-<meta name="author" content="Mattox Beckman"/>
 <body>
-<div class="reveal">
-<div class="slides">
-<section id="sec-title-slide">
-<h1 class="title">Polygons and Convex Hull</h1><h2 class="author">Mattox Beckman</h2>
-</section>
-<section id="table-of-contents-section">
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#/slide-org0951fa2">Objectives</a></li>
-<li><a href="#/slide-org9d77eb8">Representation</a></li>
-<li><a href="#/slide-org52f87a5">Getting the Area</a></li>
-<li><a href="#/slide-orge650f20">Getting the Area, Video</a></li>
-<li><a href="#/slide-org68cbe46">Is it Convex?</a></li>
-<li><a href="#/slide-org620821b">Convex Hull</a></li>
-<li><a href="#/slide-org839285f">Example</a></li>
-<li><a href="#/slide-org703b406">Sorting by Angle</a></li>
-<li><a href="#/slide-org864f5d9">Convex Hull</a></li>
-<li><a href="#/slide-orga708c2b">Convex Hull Code, 2</a></li>
-</ul>
-</div>
-</div>
-</section>
+    <div class="reveal">
+        <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<section>
-<section id="slide-org0951fa2">
-<h2 id="org0951fa2">Objectives</h2>
-<ul>
-<li>The the <code>ccw</code> function to check if a polygon is convex or not.</li>
-<li>Compute the perimeter and area or an arbitrary polygon</li>
-<li>Find a polygon (convex hull) that fits a set of points.</li>
-<li>Most code samples from <a href="https://cpbook.net/">Competitive Programming 3.</a></li>
+# Convex Hull
+## CS 491 CAP
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</ul>
+## Objectives
 
-</section>
-</section>
-<section>
-<section id="slide-org9d77eb8">
-<h2 id="org9d77eb8">Representation</h2>
-<ul>
-<li>Represent a polygon using a vector of points.</li>
-<li>Add them in counterclockwise order.</li>
-<li>The first point should be re-added as the last point.</li>
+  - The the =ccw= function to check if a polygon is convex or not.
+  - Compute the perimeter and area or an arbitrary polygon
+  - Find a polygon (convex hull) that fits a set of points.
+  - Most code samples from [[https://cpbook.net/][Competitive Programming 3.]]
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</ul>
+## Representation
 
-<span class="left">
+  - Represent a polygon using a vector of points.
+  - Add them in counterclockwise order.
+  - The first point should be re-added as the last point.
 
-<div class="org-src-container">
-
-<pre><code class="c++" >vii mypoly;
+```c++
+vii mypoly;
 mypoly.push_back(ii(2,2));
 mypoly.push_back(ii(27,10));
 mypoly.push_back(ii(30,25));
 mypoly.push_back(ii(6,20));
 mypoly.push_back(ii(2,20));
 mypoly.push_back(ii(2,2));
-</code></pre>
-</div>
-</span><span class="right">
-<div class="fig-container" data-file="d3-fig/poly-rep.html"/>
-</span>
+```
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-</section>
-</section>
-<section>
-<section id="slide-org52f87a5">
-<h2 id="org52f87a5">Getting the Area</h2>
-<p>
-\[ A = {1\over 2} \left[\begin{array}{ll} x_0 & y_0 \\ x_1 & y_1 \\ x_2 & y_2 \\ \cdots & \cdots \\ x_n & y_n \\ \end{array} \right] \]
-</p>
+Video
 
-<p>
-\[ = \begin{array}{l} x_0 y_1 + x_1 y_2 + \cdots + x_n y_0  \\ - x_1 y_0 - x_2 y_1 - \cdots - x_0 y_n \end{array} \]
-</p>
 
-<div class="org-src-container">
+<iframe url="assets/AreaOfPolygon.mp4"></iframe>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 1200px; width: 1920px; min-height: 1200px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-<pre><code class="c++" >double area(const vector&lt;point&gt; &amp;P) {
-   double result = 0.0, x1, y1, x2, y2;
-   for (int i = 0; i &lt; (int)P.size()-1; i++) {
-      x1 = P[i].x; x2 = P[i+1].x;
-      y1 = P[i].y; y2 = P[i+1].y;
-      result += (x1 * y2 - x2 * y1);
-   }
-   return fabs(result) / 2.0;
-}
-</code></pre>
-</div>
+Test
+</div></script></section></div>
+    </div>
 
-</section>
-</section>
-<section>
-<section id="slide-orge650f20">
-<h2 id="orge650f20">Getting the Area, Video</h2>
-<video data-autoplay src="AreaOfPolygon.mp4"></video>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
 
-</section>
-</section>
-<section>
-<section id="slide-org68cbe46">
-<h2 id="org68cbe46">Is it Convex?</h2>
-<ul>
-<li>Check if all turns on the perimeter turn the same way.</li>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chart/chart.min.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
+    <script src="plugin/menu/menu.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script src="plugin/reveal-pointer/pointer.js"></script>
 
-</ul>
+    <script>
+        function extend() {
+            const target = {};
+            for (let i = 0; i < arguments.length; i++) {
+                const source = arguments[i];
+                for (const key in source) {
+                    if (source.hasOwnProperty(key)) {
+                        target[key] = source[key];
+                    }
+                }
+            }
+            return target;
+        }
 
-<div class="org-src-container">
+        function isLight(color) {
+            let hex = color.replace('#', '');
 
-<pre><code class="c++" >double cross(vec a, vec b) {
-   return a.x*b.y - a.y*b.x;
-}
+            // convert #fff => #ffffff
+            if (hex.length == 3) {
+                hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+            }
 
-point ccw(point p, point q, point r) {
-   return cross(toVec(p,q), toVec(p,r)) &gt; EPS;
-}
+            const c_r = parseInt(hex.substr(0, 2), 16);
+            const c_g = parseInt(hex.substr(2, 2), 16);
+            const c_b = parseInt(hex.substr(4, 2), 16);
+            const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+            return brightness > 155;
+        }
 
-bool isConvex(const vector&lt;point&gt; &amp;P) {
-   int sz = (int)P.size();
-   if (sz &lt;= 3) return false; // a point/sz=2 or a line/sz=3 is not convex
-   bool isLeft = ccw(P[0], P[1], P[2]); // remember one result
-   for (int i = 1; i &lt; sz-1; i++)       // then compare with the others
-      if (ccw(P[i], P[i+1], P[(i+2) == sz ? 1 : i+2]) != isLeft)
-         return false; // different sign -&gt; this polygon is concave
-   return true;        // this polygon is convex
-}
-</code></pre>
-</div>
+        const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
 
-<div class="fig-container" data-file="d3-fig/is-convex.html"/>
+        if (isLight(bgColor)) {
+            document.body.classList.add('has-light-background');
+        } else {
+            document.body.classList.add('has-dark-background');
+        }
 
-</section>
-</section>
-<section>
-<section id="slide-org620821b">
-<h2 id="org620821b">Convex Hull</h2>
-<ul>
-<li>Given: a bunch of points</li>
-<li>We want: a minimal convex polygon to contain them.</li>
-<li>Basic algorithm:
-<ul>
-<li>Pick lowest point (and rightmost, if tie) as a <i>pivot</i></li>
-<li>Sort the points by the angle to the pivot.  Call these \(p_1, p_2\), etc.</li>
-<li>Push pivot, \(p_1\), to a stack.</li>
-<li>Repeat from \(p_2\):
-<ul>
-<li>Push point to stack</li>
-<li>If (angle of top three points) is clockwise, delete midpoint from stack.</li>
+        // default options to init reveal.js
+        const defaultOptions = {
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'default', // none/fade/slide/convex/concave/zoom
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealZoom,
+                RevealNotes,
+                RevealMath.MathJax3,
+                RevealMermaid,
+                RevealChart,
+                RevealCustomControls,
+                RevealMenu,
+                RevealPointer,
+                RevealChalkboard,
+            ],
+            allottedTime: 120 * 1000,
+            mathjax3: {
+                mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+            },
+            markdown: {
+                gfm: true,
+                mangle: true,
+                pedantic: false,
+                smartLists: false,
+                smartypants: false,
+            },
+            mermaid: {
+                theme: isLight ? 'default' : 'dark',
+            },
+            customcontrols: {
+                controls: [
+                    {
+                        id: 'toggle-overview',
+                        title: 'Toggle overview (O)',
+                        icon: '<i class="fa fa-th"></i>',
+                        action: 'Reveal.toggleOverview();'
+                    },
+                    {
+                        icon: '<i class="fa fa-pen-square"></i>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();'
+                    },
+                    {
+                        icon: '<i class="fa fa-pen"></i>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();'
+                    },
+                ]
+            },
+            menu: {
+                loadIcons: false
+            }
+        };
 
-</ul></li>
+        if ( pageInIframe() ) {
+            defaultOptions.scrollActivationWidth = 5;
+        }
 
-</ul></li>
+        // options from URL query string
+        const queryOptions = Reveal().getQueryHash() || {};
 
-</ul>
+        const options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"center":true,"transition":"fade","transitionSpeed":"default","width":1920,"height":1200,"margin":0}, queryOptions);
+    </script>
 
-</section>
-</section>
-<section>
-<section id="slide-org839285f">
-<h2 id="org839285f">Example</h2>
-<div class="center fig-container" data-file="d3-fig/convex-hull.html"/>
-
-</section>
-</section>
-<section>
-<section id="slide-org703b406">
-<h2 id="org703b406">Sorting by Angle</h2>
-<div class="org-src-container">
-
-<pre><code class="c++" >point pivot(0, 0);
-bool angleCmp(point a, point b) {// angle-sorting function
-   if (collinear(pivot, a, b)) // special case
-      return dist(pivot, a) &lt; dist(pivot, b);
- // check which one is closer
-   double d1x = a.x - pivot.x, d1y = a.y - pivot.y;
-   double d2x = b.x - pivot.x, d2y = b.y - pivot.y;
-   return (atan2(d1y, d1x) - atan2(d2y, d2x)) &lt; 0; }
-</code></pre>
-</div>
-
-</section>
-</section>
-<section>
-<section id="slide-org864f5d9">
-<h2 id="org864f5d9">Convex Hull</h2>
-<div class="org-src-container">
-
-<pre><code class="c++" >vector&lt;point&gt; CH(vector&lt;point&gt; P) {
-   int i, j, n = (int)P.size();
-   if (n &lt;= 3) {
-      if (!(P[0] == P[n-1])) P.push_back(P[0]); // safeguard from corner case
-      return P;
-   }
-
-// first, find P0 = point with lowest Y and if tie: rightmost X
-   int P0 = 0;
-   for (i = 1; i &lt; n; i++)
-      if (P[i].y &lt; P[P0].y || (P[i].y == P[P0].y &amp;&amp; P[i].x &gt; P[P0].x))
-         P0 = i;
-   point temp = P[0]; P[0] = P[P0]; P[P0] = temp; // swap P[P0] with P[0]
-   pivot = P[0];
-   sort(++P.begin(), P.end(), angleCmp);
-
-</code></pre>
-</div>
-
-</section>
-</section>
-<section>
-<section id="slide-orga708c2b">
-<h2 id="orga708c2b">Convex Hull Code, 2</h2>
-<div class="org-src-container">
-
-<pre><code class="c++" >   vector&lt;point&gt; S;
-   S.push_back(P[n-1]); S.push_back(P[0]); S.push_back(P[1]);
-   i = 2;
-   while (i &lt; n) {
-    // note: N must be &gt;= 3 for this method to work
-      j = (int)S.size()-1;
-      if (ccw(S[j-1], S[j], P[i])) S.push_back(P[i++]); // left turn, accept
-      else S.pop_back();
-   }
-   return S;
-}
-</code></pre>
-</div>
-</section>
-</section>
-</div>
-</div>
-<script src="../dist/reveal.js"></script>
-<script src="../plugin/highlight/highlight.js"></script>
-<script src="../plugin/notes/notes.js"></script>
-<script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: false,
-keyboard: true,
-mouseWheel: false,
-fragmentInURL: false,
-hashOneBasedIndex: false,
-pdfSeparateFragments: true,
-overview: true,
-
-transition: 'none',
-transitionSpeed: 'default',
-hash:true, respond_to_hash_changes:true, max_scale:2.0, width:1200, height:900, center:false,
-
-// Plugins with reveal.js 4.x
-plugins: [ RevealHighlight, RevealNotes ],
-
-// Optional libraries used to extend reveal.js
-dependencies: [
-{src: "reveald3.js"}]
-
-});
-</script>
+    <script>
+      Reveal.initialize(options);
+    </script>
 </body>
+
+<!-- created with Slides Extended -->
 </html>
