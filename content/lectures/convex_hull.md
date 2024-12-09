@@ -7,6 +7,7 @@ weight = 42
 
 ## Materials {#materials}
 
--   [Slides](/slides/convex-hull.pdf)
+-   [PDF Slides](/slides/convex-hull.pdf)
+-   [JS Slides](/reveal/convex-hull.html)
 -   [Area of Polygon]({{< relref "area_of_polygon_video" >}}) Video
 -   [Convex Hull Video]({{< relref "convex_hull_video" >}})
